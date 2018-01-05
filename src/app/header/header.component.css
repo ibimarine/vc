@@ -11,21 +11,3 @@
 .menu-agenda{
   color: black;
 }
-.menu-busqueda span{
-  font-size: 11px;
-}
-.linea-divisoria-agenda{
-  background-color: black;
-  height: 1px;
-  flex: auto;
-  opacity: 0.25;
-  margin: auto;
-  margin-left: 5px;
-}
-.panel-tarjeta-agenda{
-  background-color: #f7f7f7;
-  height: 56px;
-}
-.tarjeta-agenda{
-  margin-top: 245px;
-}

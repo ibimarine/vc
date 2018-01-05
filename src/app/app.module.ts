@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { DatapickerComponent } from './datapicker/datapicker.component';
 import { HeaderComponent } from './header/header.component';
+import { CardsComponent } from './cards/cards.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,7 @@ const routes: Routes = [
     AboutComponent,
     DatapickerComponent,
     HeaderComponent,
+    CardsComponent,
   ],
   imports: [
     BrowserModule,
