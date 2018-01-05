@@ -1,0 +1,68 @@
+<div class="container-fluid">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-inverse">
+      <div class="col-md-3 col-lg-2 logo">
+        <div class="navbar-header">
+          <a class="navbar-brand">
+            <div class="col-md-2 col-lg-2">
+              <img routerLink="/" src="../assets/img/logo-sanitas-responsive.png" alt="Sanitas">
+            </div>
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav pull-right">
+
+            <li>
+              <span class="icon-generic-search ico" aria-hidden="true"></span>
+            </li>
+            <li>
+              <span class="icon-speech-therapy ico" aria-hidden="true"></span>
+            </li>
+            <li>
+              <span class="icon-bell ico" aria-hidden="true"></span>
+            </li>
+            <li>
+              <span class="icon-appointments ico" aria-hidden="true"></span>
+            </li>
+          </ul>
+
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+      <div class="col-md-6 col-lg-8">
+        <h5>Portal videoconsulta</h5>
+      </div><!--/.container-fluid -->
+      <div class="navegador col-md-3 col-lg-2 p-md-0 p-lg-0">
+        <div class="col-md-3 col-lg-3 float-left">
+          <a [class.active]="aba == 'busqueda'" (click)="aba = 'busqueda'"><img src="../../assets/img/icono-lupa-blanco.png" width="24" height="24"></a>
+        </div>
+        <div class="col-md-3 col-lg-3 float-left">
+          <a [class.active]="aba == 'chat'" (click)="aba = 'chat'"><img src="../../assets/img/icono-chat-blanco.png" width="24" height="24"></a>
+        </div>
+        <div class="col-md-3 col-lg-3 float-left">
+          <a [class.active]="aba == 'agenda'" (click)="aba = 'agenda'"><img src="../../assets/img/icono-calendario-blanco.png" width="24" height="24"></a>
+        </div>
+        <div class="col-md-3 col-lg-3 float-left">
+          <a [class.active]="aba == 'notificaciones'" (click)="aba = 'notificaciones'"><img src="../../assets/img/icono-mas-blanco.png" width="24" height="24"></a>
+        </div>
+      </div>
+<!---------------------------------MENUS DEL PANEL DE LA DERECHA------------------------------------------------------------->
+
+      <div class="container" [ngSwitch]="aba">
+<!--menu de busqueda-->
+        <div *ngSwitchCase="'busqueda'">busqueda</div>
+<!--menu de chat-->
+        <div *ngSwitchCase="'chat'">chat</div>
+<!--menu de agenda-->
+        <div *ngSwitchDefault class="menu-busqueda col-md-3 col-lg-2">
+          <img class="img-fluid" src="../../assets/img/calendario.png" width="528px" height="612px">
+            <div class="row m-1 text-black">
+              <span>09:10 AM</span>
+              <span class="linea-divisoria-agenda"></span>
+            </div>
+        </div>
+<!--menu de notificaciones-->
+        <div *ngSwitchCase="'notificaciones'">notificaciones</div>
+      </div>
+    </nav>
+  </div>

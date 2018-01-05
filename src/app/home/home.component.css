@@ -1,0 +1,365 @@
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+/************************************************ menu doctor*********************************************************/
+.menu-doctor{
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 59px;
+  background: #00335b;
+}
+.circulo-foto-doctora{
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: url("../../assets/img/doctora.png") no-repeat center;
+  background-size: 40px 40px;
+}
+.icono-online-doctora{
+  position: absolute;
+  left: 54%;
+  top: 45px;
+}
+.icono-cierre-doctora{
+  right: 5px;
+  top: 5px;
+  position: absolute;
+}
+.menu-doctor{
+  font-size: 14px;
+}
+.nombre-doctor{
+  margin: auto;
+  text-align: center;
+}
+.especialidad-doctor{
+  margin: auto;
+  text-align: center;
+}
+.especialidad-doctor h6{
+  text-align: center;
+  margin: auto;
+  font-size: 12px;
+  font-weight: lighter;
+}
+.boton-disponible-doctor{
+  height: 32px;
+  width: 32%;
+  border-radius: 4px;
+  background-color: #7ed321;
+}
+.boton-nodisponible-doctor{
+  height: 32px;
+  width: 32%;
+  border-radius: 4px;
+  background-color: #406684;
+}
+.boton-disponible-doctor h6{
+  font-size: 10px;
+  margin-top: 9px;
+  text-align: center;
+  color: #000;
+}
+.boton-nodisponible-doctor h6{
+  font-size: 10px;
+  margin-top: 9px;
+  text-align: center;
+}
+.boton-disponibilidad-doctor-espacio{
+  margin-left: 3px;
+}
+.peticiones-doctor h6{
+  font-size: 12px;
+  margin: auto;
+}
+.linea-peticiones-activa-doctor{
+  background-color: #7ed321;
+  border-radius: 10px;
+  height: 8px;
+  margin: auto;
+}
+.linea-peticiones-noactiva-doctor{
+  background-color: lightslategrey;
+  border-radius: 10px;
+  height: 8px;
+  margin: auto;
+}
+.circulo-linea-activa-peticiones-doctor{
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: white;
+  top: -2px;
+  right: 0;
+}
+.circulo-linea-noactiva-peticiones-doctor{
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background: white;
+  top: -2px;
+  left: 0;
+}
+.linea-divisoria-doctor{
+  background-color: white;
+  height: 1px;
+  opacity: 0.25;
+}
+.mis-dispositivos{
+  text-align: center;
+}
+.mis-dispositivos h5{
+  font-size: 14px;
+  margin: auto;
+}
+.boton-comprobar-dispositivos h6{
+  font-size: 10px;
+  margin: auto;
+}
+.circulo-mis-dispositivos-activo{
+  border-radius: 25px;
+  border: solid 1px #7ed321;
+  width: 40px;
+  height: 40px;
+}
+.circulo-mis-dispositivos-noactivo{
+  border-radius: 25px;
+  border: solid 1px #d81e05;
+  width: 40px;
+  height: 40px;
+}
+.imagen-circulo-dispositivo{
+   display: block;
+   margin-top: 5px;
+   margin-left: 7px;
+   padding: 0px;
+ }
+.boton-comprobar-dispositivos{
+  border-radius: 4px;
+  border: solid 1px #ffffff;
+  height: 32px;
+  font-size: 10px;
+  margin-top: 25px;
+  text-align: center;
+}
+.boton-comprobar-dispositivos h6{
+  text-align: center;
+  padding-top: 8px;
+  margin: 0;
+}
+.linea2-divisoria-doctor{
+  background-color: white;
+  height: 1px;
+  opacity: 0.25;
+  position: absolute;
+  bottom: 140px;
+}
+.settings-estilo{
+  position: absolute;
+  bottom: 80px;
+}
+/***********************************************************VISTA XL************************************************/
+@media (min-width: 1200px) {
+  .icono-notificaciones{
+    left: 73px;
+  }
+  .settings-estilo{
+    position: relative;
+    bottom: -40px;
+  }
+}
+/***********************************************************VISTA MD************************************************/
+@media (min-width: 767px) {
+  .icono-notificaciones{
+    left: 136px;
+  }
+  .settings-estilo{
+    position: relative;
+    bottom: -20px;
+  }
+}
+/***********************************************************VISTA LG************************************************/
+@media (min-width: 992px) {
+  .settings-estilo{
+    position: relative;
+    bottom: -20px;
+  }
+  .icono-notificaciones{
+    left: 73px;
+  }
+}
+/************************************************ menu del centro****************************************************/
+.menu-consultas{
+  color: black;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 25px;
+
+}
+.destacado{
+  margin-top: 59px;
+  margin-bottom: 25px;
+}
+.destacado h1{
+  font-size: 20px;
+}
+.imagen-consulta-destacada-retraso{
+  height: 25px;
+  vertical-align: bottom;
+  margin: 5px;
+}
+.card-title{
+  margin-left: 10px;
+}
+.card-title h1{
+  font-size: 1rem;
+  padding-left: 1rem;
+  margin-top: 10px;
+}
+.card-subtitle{
+  font-size: 1rem;
+}
+.card-text{
+  margin-top: 16px;
+
+}
+.imagen-card{
+  float: left;
+  padding-left: 10px;
+}
+.linea-consulta-color{
+  width: 15px;
+  height: 19px;
+  background-color: #7ed320;
+}
+.contenido-card{
+  float: left;
+  padding: 0;
+  margin-top: 10px;
+}
+.descripcion-card{
+  font-weight: lighter;
+  text-align: right;
+  font-size: 14px;
+  float: right;
+}
+.hora-consulta{
+  float: left;
+  padding: 0;
+}
+.tipo-de-consulta{
+  float: left;
+}
+.detalle-de-consulta{
+  float: right;
+}
+.icono-notificaciones{
+  position: absolute;
+  top: -5px;
+}
+.icono-online-notificaciones{
+  position: absolute;
+  left: 28px;
+  top: 20px;
+}
+.circulo-foto-consulta{
+  position: absolute;
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #c0b1c1;
+}
+.input-group{
+  padding: 0;
+}
+.iconos-consulta{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.test-consulta{
+  float: left;
+  padding: 0;
+}
+.boton-busqueda{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.input-group h6{
+  font-family: Montserrat;
+  font-size: 11px;
+  line-height: 1.45;
+  text-align: left;
+  color: grey;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.fecha-busqueda{
+  text-align: center;
+  font-size: 14px;
+}
+.busqueda-close{
+  background: url("../../assets/img/close-lite.png") no-repeat center right;
+}
+.test-consulta p{
+  font-size: 12px;
+  color: #7ed321;
+}
+.nombre-cliente-consulta{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.0;
+  text-align: left;
+  color: #0079c8;
+}
+.prueba-del-test{
+  font-size: 10px;
+  color: #6c6e71;
+}
+.descripcion-cliente-consulta{
+  font-size: 12px;
+  color: #000;
+}
+.calendario-fechaentrada-input{
+  background: url("../../assets/img/calendar@3x.png") no-repeat left;
+  background-size: 24px 24px;
+}
+.calendario-fechasalida-input{
+  background: url("../../assets/img/appointment-previous@3x.png") no-repeat left;
+  background-size: 24px 24px;
+}
+li{
+  list-style: none;
+}
+li:before{
+  content: '';
+  margin-right: 10px;
+  margin-top: 20px;
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  background-image: url(../../assets/img/settings-icon.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 13px;
+
+}
+li:hover a {
+  color: white;
+  text-decoration: none;
+}

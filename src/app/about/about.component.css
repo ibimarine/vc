@@ -1,0 +1,111 @@
+.settings-body{
+  margin-top: 59px;
+  height: 100%;
+}
+.menu-doctor{
+  width: 50px;
+  background: #00335b;
+  position: fixed;
+  padding-top: 59px;
+}
+.circulo-foto-doctora{
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: url("../../assets/img/doctora.png") no-repeat center;
+  background-size: 40px 40px;
+}
+.icono-online-doctora{
+  position: absolute;
+  left: 54%;
+  top: 92px;
+}
+.contenido-ajustes{
+  margin-left: 50px;
+  overflow-x: hidden;
+  min-width: 100%;
+}
+.linea-divisoria-ajustes-container{
+  box-shadow: 0px 6px 4px;
+}
+.nombre-doctor-ajustes{
+  background: url("../../assets/img/doctora.png") no-repeat center;
+  background-size: cover;
+  height: 205px;
+
+}
+.lista-de-datos-ajustes{
+  min-width: 100%;
+}
+.foto-doctor-ajustes{
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 135px;
+  left: 140px;
+}
+.descripcion-ajustes-doctor{
+  display: flex;
+  justify-items: center;
+  padding-bottom: 100px;
+}
+.tabla-ajustes-doctor{
+  float: left;
+}
+.linea-divisoria-items-ajustes{
+  border-bottom-style: solid;
+  border-bottom-color: darkgrey;
+  border-bottom-width: 1px;
+  width: 245px;
+}
+.linea-divisoria-items-ajustes-lateral{
+  border-right-style: solid;
+  border-right-color: darkgrey;
+  border-right-width: 1px;
+  border-left-style: solid;
+  border-left-color: darkgrey;
+  border-left-width: 1px;
+}
+.linea-divisoria-items-ajustes-lateral p{
+  margin-top: 25px;
+}
+.linea-peticiones-activa-ajustes-notificaciones{
+  background-color: #7ed321;
+  border-radius: 10px;
+  height: 15px;
+  margin-top: 2px;
+  width: 35px;
+}
+.linea-peticiones-noactiva-ajustes-notificaciones{
+  background-color: lightslategrey;
+  border-radius: 10px;
+  height: 15px;
+  margin-top: 2px;
+  width: 35px;
+}
+.circulo-linea-activa-peticiones-ajustes-notificaciones{
+  position: absolute;
+  width: 14px;
+  height: 13px;
+  border-radius: 6px;
+  background: white;
+  top: 1px;
+  right: 2px;
+}
+.circulo-linea-noactiva-peticiones-ajustes-notificaciones{
+  position: absolute;
+  width: 14px;
+  height: 13px;
+  border-radius: 6px;
+  background: white;
+  top: 1px;
+  left: 2px;
+}

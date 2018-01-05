@@ -1,0 +1,810 @@
+<div class="container-fluid">
+  <div class="row">
+<!------------------------------------------------menu del doctor izquierda------------------------------------------>
+    <div class="menu-doctor col-md-3 col-lg-2 p-0">
+<!--foto, estado y cierre del doctor-->
+      <div class="row p-t-4">
+        <div class="circulo-foto-doctora">
+          <a class="icono-online-doctora">
+            <img src="../../assets/img/online@3x.png" width="12" height="12" class="img-fluid">
+          </a>
+        </div>
+        <div class="icono-cierre-doctora">
+          <a class="">
+            <img src="../../assets/img/close-lite.png" width="24" height="24" class="img-fluid">
+          </a>
+        </div>
+      </div>
+<!--nombre y especialidad del doctor-->
+      <div class="row p-1 m-t-2">
+        <div class="nombre-doctor col-md-12 col-lg-12">
+          <h6>Laura González</h6>
+        </div>
+        <div class="especialidad-doctor col-md-12 col-lg-12">
+          <h6>Traumatología</h6>
+          <h6>Asesor de nutrición</h6>
+        </div>
+      </div>
+<!--botones de disponibilidad del doctor-->
+      <div class="row p-1 m-t-2">
+        <div class="boton-disponible-doctor">
+          <a><h6>Disponible</h6></a>
+        </div>
+        <div class="boton-nodisponible-doctor boton-disponibilidad-doctor-espacio">
+          <a><h6>Ocupado</h6></a>
+        </div>
+        <div class="boton-nodisponible-doctor boton-disponibilidad-doctor-espacio">
+          <a><h6>Ausente</h6></a>
+        </div>
+      </div>
+<!--peticiones del doctor-->
+      <div class="row p-1 m-t-2 col-md-12 col-lg-12 peticiones-doctor">
+        <div class="m-b-0 col-md-9 col-lg-9">
+            <h6>Consultas con citas</h6>
+        </div>
+      <div class="col-md-2 col-lg-2 p-1 linea-peticiones-activa-doctor">
+          <div class="circulo-linea-activa-peticiones-doctor"></div>
+
+         </div>
+      </div>
+      <div class="row p-1 m-t-2 col-md-12 col-lg-12 peticiones-doctor">
+        <div class="col-md-9 col-lg-9">
+          <h6>Consultas sin citas</h6>
+        </div>
+        <div class="col-md-2 col-lg-2 p-1 linea-peticiones-noactiva-doctor">
+          <div class="circulo-linea-noactiva-peticiones-doctor"></div>
+        </div>
+      </div>
+      <div class="row p-1 m-t-2 m-b-4 col-md-12 col-lg-12 peticiones-doctor">
+        <div class="col-md-9 col-lg-9">
+          <h6>Urgencias</h6>
+        </div>
+        <div class="col-md-2 col-lg-2 p-1 linea-peticiones-noactiva-doctor">
+          <div class="circulo-linea-noactiva-peticiones-doctor"></div>
+        </div>
+      </div>
+<!--linea divisoria-->
+      <div class="col-lg-10 offset-1 linea-divisoria-doctor"></div>
+<!--mis dispositivos-->
+      <div class="row p-1 m-t-2">
+        <div class="mis-dispositivos col-md-12 col-lg-12 p-b-4">
+          <h5>Mis dispositivos</h5>
+        </div>
+        <div class="col-md-12 col-lg-12">
+          <div class="col-md-4 col-lg-4 float-left">
+            <div class="circulo-mis-dispositivos-activo float-left">
+              <img class="imagen-circulo-dispositivo" src="../../assets/img/volume.png" width="24" height="24">
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 float-left">
+            <div class="circulo-mis-dispositivos-activo float-left">
+              <img class="imagen-circulo-dispositivo" src="../../assets/img/volume.png" width="24" height="24">
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 float-left">
+            <div class="circulo-mis-dispositivos-noactivo float-left">
+              <img class="imagen-circulo-dispositivo" src="../../assets/img/volume.png" width="24" height="24">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12">
+          <div class="boton-comprobar-dispositivos col-xl-10 offset-xl-1">
+            <h6>Comprobar dispositivos</h6>
+          </div>
+        </div>
+      </div>
+      <div class="row p-1 m-t-2">
+        <div class="col-lg-12"></div>
+      </div>
+<!--Settings menu izquierda-->
+      <div class="row settings-estilo">
+        <div  class="col-lg-12">
+          <img class="m-r-2 img-fluid" src="../../assets/img/settings-icon.png" width="13px" height="13px">
+          <li><a routerLink="/about">Ajustes</a></li>
+
+        </div>
+        <div class="col-lg-12 m-t-1">
+          <img class="m-r-2 img-fluid" src="../../assets/img/settings-icon-logout.png" width="13px" height="13px">Cerrar sesión
+        </div>
+      </div>
+    </div>
+<!-----------------------------------------------menu consultas del centro------------------------------------------->
+    <div class="menu-consultas col-md-12 offset-md-0 col-lg-8 offset-lg-2">
+<!-- esta es la consulta destacada -->
+      <div class="destacado">
+        <div class="card">
+          <div class="card-red">
+              <div class="row text-red bg-red">
+                <img class="imagen-consulta-destacada-retraso" src="../../assets/img/icono-retraso-cita.png">
+                <h1>Retraso acumulado</h1>
+                <div class="m-l-1"><h1><strong>28 min.</strong></h1></div>
+              </div>
+          </div>
+          <div class="card-block">
+            <div class="card-title m-t-2 m-b-0">
+              <h6>Próxima consulta</h6>
+            </div>
+            <div class="imagen-card col-md-1 col-lg-1">
+                <img src="../../assets/img/video.png" class="img-fluid">
+              </div>
+            <div class="contenido-card col-md-7 col-lg-7">
+                <div class="hora-consulta col-md-2 col-lg-2">
+                  <h2 class="card-subtitle mb-2">16:10</h2>
+                </div>
+                <div class="tipo-de-consulta col-md-8 col-lg-8 p-l-0">
+                  <h2 class="card-subtitle mb-2">Primera consulta</h2>
+                </div>
+<!--ESTA ES LA SECCION DE LA FOTO DEL CARD-->
+                <div class="circulo-foto-consulta">
+                    <a class="icono-online-notificaciones">
+                      <img src="../../assets/img/online@3x.png" width="12" height="12" class="img-fluid">
+                    </a>
+                </div>
+                <div class=" offset-md-2 col-md-8 offset-lg-2 col-lg-8 p-l-0">
+                  <h6 class="nombre-cliente-consulta mb-2">María Jimenez Ruiz</h6>
+                  <h5 class="descripcion-cliente-consulta text-uppercase">MUJER / 28 AÑOS / CIUDAD REAL</h5>
+                </div>
+<!--ESTA ES LA SECCION DE LOS TEST DE LA FOTO Y LAS CARACTERISTICAS DEL CARD-->
+                <div class="iconos-consulta">
+<!--AQUI VA EL TEST DE LA IMAGEN-->
+                  <div class="test-consulta col-md-2 col-lg-2">
+                    <p class="m-md-0 m-lg-0">12 min</p>
+                    <p>test ok</p>
+                  </div>
+                  <div class="col-md-11 offset-md-0 col-lg-11 offset-lg-2 p-l-0">
+                    <a><img src="../../assets/img/icono-video.png" width="24" height="24" class="img-fluid"></a>
+                    <a><img src="../../assets/img/icono-phone.png" width="24" height="24" class="img-fluid"></a>
+                    <a><img src="../../assets/img/icono-chat.png" width="24" height="24" class="img-fluid"></a>
+                    <a class="icono-notificaciones"><img src="../../assets/img/group-4@3x.png" width="12" height="12" class="img-fluid"></a>
+                    <a><img src="../../assets/img/icono-reporte.png" width="24" height="24" class="img-fluid"></a>
+                  </div>
+                </div>
+              </div>
+            <div class="descripcion-card col-md-4 col-lg-4">
+              <div class="float-lg-right p-r-3">
+                <div class="font-weight-bold">28 nov 17</div>
+                <div>Traumatología</div>
+                <div>Localizador AB593TJ</div>
+                <div>ID Sanitas 0823252</div>
+                <div>Consulta #6512</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- estas son las consultas no destacadas -->
+      <div class="no-destacado">
+        <div class="card">
+          <div class="card-block">
+            <div class="card-title m-t-2 m-b-0">
+              <h6>Últimas consultas</h6>
+            </div>
+            <div class="imagen-card col-lg-1">
+
+            </div>
+            <div class="contenido-card col-lg-7">
+              <div class="hora-consulta col-lg-2">
+                <h2 class="card-subtitle mb-2">16:10</h2>
+              </div>
+              <div class="tipo-de-consulta col-lg-8 p-l-0">
+                <h2 class="card-subtitle mb-2">Primera consulta</h2>
+              </div>
+              <!--ESTA ES LA SECCION DE LA FOTO DEL CARD-->
+              <div class="circulo-foto-consulta">
+                <a class="icono-online-notificaciones">
+                  <img src="../../assets/img/online@3x.png" width="12" height="12" class="img-fluid">
+                </a>
+              </div>
+              <div class=" offset-lg-2 col-lg-8 p-l-0">
+                <h6 class="nombre-cliente-consulta mb-2">María Jimenez Ruiz</h6>
+                <h5 class="descripcion-cliente-consulta text-uppercase">MUJER / 28 AÑOS / CIUDAD REAL</h5>
+              </div>
+              <!--ESTA ES LA SECCION DE LOS TEST DE LA FOTO Y LAS CARACTERISTICAS DEL CARD-->
+              <div class="iconos-consulta">
+                <!--AQUI VA EL TEST DE LA IMAGEN-->
+                <div class="test-consulta col-lg-2">
+                  <p class="m-lg-0">12 min</p>
+                  <p>test ok</p>
+                </div>
+                <div class="col-lg-11 offset-lg-2 p-l-0">
+                  <a><img src="../../assets/img/icono-video.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-phone.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-chat.png" width="24" height="24" class="img-fluid"></a>
+                  <a class="icono-notificaciones"><img src="../../assets/img/group-4@3x.png" width="12" height="12" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-reporte.png" width="24" height="24" class="img-fluid"></a>
+                </div>
+              </div>
+            </div>
+            <div class="descripcion-card col-lg-4">
+              <div class="float-lg-right p-r-3">
+                <div class="font-weight-bold">28 nov 17</div>
+                <div>Traumatología</div>
+                <div>Localizador AB593TJ</div>
+                <div>ID Sanitas 0823252</div>
+                <div>Consulta #6512</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card p-t-3">
+          <div class="card-block">
+            <div class="imagen-card col-lg-1">
+
+            </div>
+            <div class="contenido-card col-lg-7">
+              <div class="hora-consulta col-lg-2">
+                <h2 class="card-subtitle mb-2">16:10</h2>
+              </div>
+              <div class="tipo-de-consulta col-lg-8 p-l-0">
+                <h2 class="card-subtitle mb-2">Primera consulta</h2>
+              </div>
+              <!--ESTA ES LA SECCION DE LA FOTO DEL CARD-->
+              <div class="circulo-foto-consulta">
+                <a class="icono-online-notificaciones">
+                  <img src="../../assets/img/online@3x.png" width="12" height="12" class="img-fluid">
+                </a>
+              </div>
+              <div class=" offset-lg-2 col-lg-8 p-l-0">
+                <h6 class="nombre-cliente-consulta mb-2">María Jimenez Ruiz</h6>
+                <h5 class="descripcion-cliente-consulta text-uppercase">MUJER / 28 AÑOS / CIUDAD REAL</h5>
+              </div>
+              <!--ESTA ES LA SECCION DE LOS TEST DE LA FOTO Y LAS CARACTERISTICAS DEL CARD-->
+              <div class="iconos-consulta">
+                <!--AQUI VA EL TEST DE LA IMAGEN-->
+                <div class="test-consulta col-lg-2">
+                  <p class="m-lg-0">12 min</p>
+                  <p>test ok</p>
+                </div>
+                <div class="col-lg-11 offset-lg-2 p-l-0">
+                  <a><img src="../../assets/img/icono-video.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-phone.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-chat.png" width="24" height="24" class="img-fluid"></a>
+                  <a class="icono-notificaciones"><img src="../../assets/img/group-4@3x.png" width="12" height="12" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-reporte.png" width="24" height="24" class="img-fluid"></a>
+                </div>
+              </div>
+            </div>
+            <div class="descripcion-card col-lg-4">
+              <div class="float-lg-right p-r-3">
+                <div class="font-weight-bold">28 nov 17</div>
+                <div>Traumatología</div>
+                <div>Localizador AB593TJ</div>
+                <div>ID Sanitas 0823252</div>
+                <div>Consulta #6512</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card p-t-3">
+          <div class="card-block">
+            <div class="imagen-card col-lg-1">
+
+            </div>
+            <div class="contenido-card col-lg-7">
+              <div class="hora-consulta col-lg-2">
+                <h2 class="card-subtitle mb-2">16:10</h2>
+              </div>
+              <div class="tipo-de-consulta col-lg-8 p-l-0">
+                <h2 class="card-subtitle mb-2">Primera consulta</h2>
+              </div>
+              <!--ESTA ES LA SECCION DE LA FOTO DEL CARD-->
+              <div class="circulo-foto-consulta">
+                <a class="icono-online-notificaciones">
+                  <img src="../../assets/img/online@3x.png" width="12" height="12" class="img-fluid">
+                </a>
+              </div>
+              <div class=" offset-lg-2 col-lg-8 p-l-0">
+                <h6 class="nombre-cliente-consulta mb-2">María Jimenez Ruiz</h6>
+                <h5 class="descripcion-cliente-consulta text-uppercase">MUJER / 28 AÑOS / CIUDAD REAL</h5>
+              </div>
+              <!--ESTA ES LA SECCION DE LOS TEST DE LA FOTO Y LAS CARACTERISTICAS DEL CARD-->
+              <div class="iconos-consulta">
+                <!--AQUI VA EL TEST DE LA IMAGEN-->
+                <div class="test-consulta col-lg-2">
+                  <p class="m-lg-0">12 min</p>
+                  <p>test ok</p>
+                </div>
+                <div class="col-lg-11 offset-lg-2 p-l-0">
+                  <a><img src="../../assets/img/icono-video.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-phone.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-chat.png" width="24" height="24" class="img-fluid"></a>
+                  <a class="icono-notificaciones"><img src="../../assets/img/group-4@3x.png" width="12" height="12" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-reporte.png" width="24" height="24" class="img-fluid"></a>
+                </div>
+              </div>
+            </div>
+            <div class="descripcion-card col-lg-4">
+              <div class="float-lg-right p-r-3">
+                <div class="font-weight-bold">28 nov 17</div>
+                <div>Traumatología</div>
+                <div>Localizador AB593TJ</div>
+                <div>ID Sanitas 0823252</div>
+                <div>Consulta #6512</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card p-t-3">
+          <div class="card-block">
+            <div class="imagen-card col-lg-1">
+
+            </div>
+            <div class="contenido-card col-lg-7">
+              <div class="hora-consulta col-lg-2">
+                <h2 class="card-subtitle mb-2">16:10</h2>
+              </div>
+              <div class="tipo-de-consulta col-lg-8 p-l-0">
+                <h2 class="card-subtitle mb-2">Primera consulta</h2>
+              </div>
+              <!--ESTA ES LA SECCION DE LA FOTO DEL CARD-->
+              <div class="circulo-foto-consulta">
+                <a class="icono-online-notificaciones">
+                  <img src="../../assets/img/online@3x.png" width="12" height="12" class="img-fluid">
+                </a>
+              </div>
+              <div class=" offset-lg-2 col-lg-8 p-l-0">
+                <h6 class="nombre-cliente-consulta mb-2">María Jimenez Ruiz</h6>
+                <h5 class="descripcion-cliente-consulta text-uppercase">MUJER / 28 AÑOS / CIUDAD REAL</h5>
+              </div>
+              <!--ESTA ES LA SECCION DE LOS TEST DE LA FOTO Y LAS CARACTERISTICAS DEL CARD-->
+              <div class="iconos-consulta">
+                <!--AQUI VA EL TEST DE LA IMAGEN-->
+                <div class="test-consulta col-lg-2">
+                  <p class="m-lg-0">12 min</p>
+                  <p>test ok</p>
+                </div>
+                <div class="col-lg-11 offset-lg-2 p-l-0">
+                  <a><img src="../../assets/img/icono-video.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-phone.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-chat.png" width="24" height="24" class="img-fluid"></a>
+                  <a class="icono-notificaciones"><img src="../../assets/img/group-4@3x.png" width="12" height="12" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-reporte.png" width="24" height="24" class="img-fluid"></a>
+                </div>
+              </div>
+            </div>
+            <div class="descripcion-card col-lg-4">
+              <div class="float-lg-right p-r-3">
+                <div class="font-weight-bold">28 nov 17</div>
+                <div>Traumatología</div>
+                <div>Localizador AB593TJ</div>
+                <div>ID Sanitas 0823252</div>
+                <div>Consulta #6512</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card p-t-3">
+          <div class="card-block">
+            <div class="imagen-card col-lg-1">
+
+            </div>
+            <div class="contenido-card col-lg-7">
+              <div class="hora-consulta col-lg-2">
+                <h2 class="card-subtitle mb-2">16:10</h2>
+              </div>
+              <div class="tipo-de-consulta col-lg-8 p-l-0">
+                <h2 class="card-subtitle mb-2">Primera consulta</h2>
+              </div>
+              <!--ESTA ES LA SECCION DE LA FOTO DEL CARD-->
+              <div class="circulo-foto-consulta">
+                <a class="icono-online-notificaciones">
+                  <img src="../../assets/img/online@3x.png" width="12" height="12" class="img-fluid">
+                </a>
+              </div>
+              <div class=" offset-lg-2 col-lg-8 p-l-0">
+                <h6 class="nombre-cliente-consulta mb-2">María Jimenez Ruiz</h6>
+                <h5 class="descripcion-cliente-consulta text-uppercase">MUJER / 28 AÑOS / CIUDAD REAL</h5>
+              </div>
+              <!--ESTA ES LA SECCION DE LOS TEST DE LA FOTO Y LAS CARACTERISTICAS DEL CARD-->
+              <div class="iconos-consulta">
+                <!--AQUI VA EL TEST DE LA IMAGEN-->
+                <div class="test-consulta col-lg-2">
+                  <p class="m-lg-0">12 min</p>
+                  <p>test ok</p>
+                </div>
+                <div class="col-lg-11 offset-lg-2 p-l-0">
+                  <a><img src="../../assets/img/icono-video.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-phone.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-chat.png" width="24" height="24" class="img-fluid"></a>
+                  <a class="icono-notificaciones"><img src="../../assets/img/group-4@3x.png" width="12" height="12" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-reporte.png" width="24" height="24" class="img-fluid"></a>
+                </div>
+              </div>
+            </div>
+            <div class="descripcion-card col-lg-4">
+              <div class="float-lg-right p-r-3">
+                <div class="font-weight-bold">28 nov 17</div>
+                <div>Traumatología</div>
+                <div>Localizador AB593TJ</div>
+                <div>ID Sanitas 0823252</div>
+                <div>Consulta #6512</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card p-t-3">
+          <div class="card-block">
+            <div class="imagen-card col-lg-1">
+
+            </div>
+            <div class="contenido-card col-lg-7">
+              <div class="hora-consulta col-lg-2">
+                <h2 class="card-subtitle mb-2">16:10</h2>
+              </div>
+              <div class="tipo-de-consulta col-lg-8 p-l-0">
+                <h2 class="card-subtitle mb-2">Primera consulta</h2>
+              </div>
+              <!--ESTA ES LA SECCION DE LA FOTO DEL CARD-->
+              <div class="circulo-foto-consulta">
+                <a class="icono-online-notificaciones">
+                  <img src="../../assets/img/online@3x.png" width="12" height="12" class="img-fluid">
+                </a>
+              </div>
+              <div class=" offset-lg-2 col-lg-8 p-l-0">
+                <h6 class="nombre-cliente-consulta mb-2">María Jimenez Ruiz</h6>
+                <h5 class="descripcion-cliente-consulta text-uppercase">MUJER / 28 AÑOS / CIUDAD REAL</h5>
+              </div>
+              <!--ESTA ES LA SECCION DE LOS TEST DE LA FOTO Y LAS CARACTERISTICAS DEL CARD-->
+              <div class="iconos-consulta">
+                <!--AQUI VA EL TEST DE LA IMAGEN-->
+                <div class="test-consulta col-lg-2">
+                  <p class="m-lg-0">12 min</p>
+                  <p>test ok</p>
+                </div>
+                <div class="col-lg-11 offset-lg-2 p-l-0">
+                  <a><img src="../../assets/img/icono-video.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-phone.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-chat.png" width="24" height="24" class="img-fluid"></a>
+                  <a class="icono-notificaciones"><img src="../../assets/img/group-4@3x.png" width="12" height="12" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-reporte.png" width="24" height="24" class="img-fluid"></a>
+                </div>
+              </div>
+            </div>
+            <div class="descripcion-card col-lg-4">
+              <div class="float-lg-right p-r-3">
+                <div class="font-weight-bold">28 nov 17</div>
+                <div>Traumatología</div>
+                <div>Localizador AB593TJ</div>
+                <div>ID Sanitas 0823252</div>
+                <div>Consulta #6512</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card p-t-3">
+          <div class="card-block">
+            <div class="imagen-card col-lg-1">
+
+            </div>
+            <div class="contenido-card col-lg-7">
+              <div class="hora-consulta col-lg-2">
+                <h2 class="card-subtitle mb-2">16:10</h2>
+              </div>
+              <div class="tipo-de-consulta col-lg-8 p-l-0">
+                <h2 class="card-subtitle mb-2">Primera consulta</h2>
+              </div>
+              <!--ESTA ES LA SECCION DE LA FOTO DEL CARD-->
+              <div class="circulo-foto-consulta">
+                <a class="icono-online-notificaciones">
+                  <img src="../../assets/img/online@3x.png" width="12" height="12" class="img-fluid">
+                </a>
+              </div>
+              <div class=" offset-lg-2 col-lg-8 p-l-0">
+                <h6 class="nombre-cliente-consulta mb-2">María Jimenez Ruiz</h6>
+                <h5 class="descripcion-cliente-consulta text-uppercase">MUJER / 28 AÑOS / CIUDAD REAL</h5>
+              </div>
+              <!--ESTA ES LA SECCION DE LOS TEST DE LA FOTO Y LAS CARACTERISTICAS DEL CARD-->
+              <div class="iconos-consulta">
+                <!--AQUI VA EL TEST DE LA IMAGEN-->
+                <div class="test-consulta col-lg-2">
+                  <p class="m-lg-0">12 min</p>
+                  <p>test ok</p>
+                </div>
+                <div class="col-lg-11 offset-lg-2 p-l-0">
+                  <a><img src="../../assets/img/icono-video.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-phone.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-chat.png" width="24" height="24" class="img-fluid"></a>
+                  <a class="icono-notificaciones"><img src="../../assets/img/group-4@3x.png" width="12" height="12" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-reporte.png" width="24" height="24" class="img-fluid"></a>
+                </div>
+              </div>
+            </div>
+            <div class="descripcion-card col-lg-4">
+              <div class="float-lg-right p-r-3">
+                <div class="font-weight-bold">28 nov 17</div>
+                <div>Traumatología</div>
+                <div>Localizador AB593TJ</div>
+                <div>ID Sanitas 0823252</div>
+                <div>Consulta #6512</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card p-t-3">
+          <div class="card-block">
+            <div class="imagen-card col-lg-1">
+
+            </div>
+            <div class="contenido-card col-lg-7">
+              <div class="hora-consulta col-lg-2">
+                <h2 class="card-subtitle mb-2">16:10</h2>
+              </div>
+              <div class="tipo-de-consulta col-lg-8 p-l-0">
+                <h2 class="card-subtitle mb-2">Primera consulta</h2>
+              </div>
+              <!--ESTA ES LA SECCION DE LA FOTO DEL CARD-->
+              <div class="circulo-foto-consulta">
+                <a class="icono-online-notificaciones">
+                  <img src="../../assets/img/online@3x.png" width="12" height="12" class="img-fluid">
+                </a>
+              </div>
+              <div class=" offset-lg-2 col-lg-8 p-l-0">
+                <h6 class="nombre-cliente-consulta mb-2">María Jimenez Ruiz</h6>
+                <h5 class="descripcion-cliente-consulta text-uppercase">MUJER / 28 AÑOS / CIUDAD REAL</h5>
+              </div>
+              <!--ESTA ES LA SECCION DE LOS TEST DE LA FOTO Y LAS CARACTERISTICAS DEL CARD-->
+              <div class="iconos-consulta">
+                <!--AQUI VA EL TEST DE LA IMAGEN-->
+                <div class="test-consulta col-lg-2">
+                  <p class="m-lg-0">12 min</p>
+                  <p>test ok</p>
+                </div>
+                <div class="col-lg-11 offset-lg-2 p-l-0">
+                  <a><img src="../../assets/img/icono-video.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-phone.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-chat.png" width="24" height="24" class="img-fluid"></a>
+                  <a class="icono-notificaciones"><img src="../../assets/img/group-4@3x.png" width="12" height="12" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-reporte.png" width="24" height="24" class="img-fluid"></a>
+                </div>
+              </div>
+            </div>
+            <div class="descripcion-card col-lg-4">
+              <div class="float-lg-right p-r-3">
+                <div class="font-weight-bold">28 nov 17</div>
+                <div>Traumatología</div>
+                <div>Localizador AB593TJ</div>
+                <div>ID Sanitas 0823252</div>
+                <div>Consulta #6512</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card p-t-3">
+          <div class="card-block">
+            <div class="imagen-card col-lg-1">
+
+            </div>
+            <div class="contenido-card col-lg-7">
+              <div class="hora-consulta col-lg-2">
+                <h2 class="card-subtitle mb-2">16:10</h2>
+              </div>
+              <div class="tipo-de-consulta col-lg-8 p-l-0">
+                <h2 class="card-subtitle mb-2">Primera consulta</h2>
+              </div>
+              <!--ESTA ES LA SECCION DE LA FOTO DEL CARD-->
+              <div class="circulo-foto-consulta">
+                <a class="icono-online-notificaciones">
+                  <img src="../../assets/img/online@3x.png" width="12" height="12" class="img-fluid">
+                </a>
+              </div>
+              <div class=" offset-lg-2 col-lg-8 p-l-0">
+                <h6 class="nombre-cliente-consulta mb-2">María Jimenez Ruiz</h6>
+                <h5 class="descripcion-cliente-consulta text-uppercase">MUJER / 28 AÑOS / CIUDAD REAL</h5>
+              </div>
+              <!--ESTA ES LA SECCION DE LOS TEST DE LA FOTO Y LAS CARACTERISTICAS DEL CARD-->
+              <div class="iconos-consulta">
+                <!--AQUI VA EL TEST DE LA IMAGEN-->
+                <div class="test-consulta col-lg-2">
+                  <p class="m-lg-0">12 min</p>
+                  <p>test ok</p>
+                </div>
+                <div class="col-lg-11 offset-lg-2 p-l-0">
+                  <a><img src="../../assets/img/icono-video.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-phone.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-chat.png" width="24" height="24" class="img-fluid"></a>
+                  <a class="icono-notificaciones"><img src="../../assets/img/group-4@3x.png" width="12" height="12" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-reporte.png" width="24" height="24" class="img-fluid"></a>
+                </div>
+              </div>
+            </div>
+            <div class="descripcion-card col-lg-4">
+              <div class="float-lg-right p-r-3">
+                <div class="font-weight-bold">28 nov 17</div>
+                <div>Traumatología</div>
+                <div>Localizador AB593TJ</div>
+                <div>ID Sanitas 0823252</div>
+                <div>Consulta #6512</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card p-t-3">
+          <div class="card-block">
+            <div class="imagen-card col-lg-1">
+
+            </div>
+            <div class="contenido-card col-lg-7">
+              <div class="hora-consulta col-lg-2">
+                <h2 class="card-subtitle mb-2">16:10</h2>
+              </div>
+              <div class="tipo-de-consulta col-lg-8 p-l-0">
+                <h2 class="card-subtitle mb-2">Primera consulta</h2>
+              </div>
+              <!--ESTA ES LA SECCION DE LA FOTO DEL CARD-->
+              <div class="circulo-foto-consulta">
+                <a class="icono-online-notificaciones">
+                  <img src="../../assets/img/online@3x.png" width="12" height="12" class="img-fluid">
+                </a>
+              </div>
+              <div class=" offset-lg-2 col-lg-8 p-l-0">
+                <h6 class="nombre-cliente-consulta mb-2">María Jimenez Ruiz</h6>
+                <h5 class="descripcion-cliente-consulta text-uppercase">MUJER / 28 AÑOS / CIUDAD REAL</h5>
+              </div>
+              <!--ESTA ES LA SECCION DE LOS TEST DE LA FOTO Y LAS CARACTERISTICAS DEL CARD-->
+              <div class="iconos-consulta">
+                <!--AQUI VA EL TEST DE LA IMAGEN-->
+                <div class="test-consulta col-lg-2">
+                  <p class="m-lg-0">12 min</p>
+                  <p>test ok</p>
+                </div>
+                <div class="col-lg-11 offset-lg-2 p-l-0">
+                  <a><img src="../../assets/img/icono-video.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-phone.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-chat.png" width="24" height="24" class="img-fluid"></a>
+                  <a class="icono-notificaciones"><img src="../../assets/img/group-4@3x.png" width="12" height="12" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-reporte.png" width="24" height="24" class="img-fluid"></a>
+                </div>
+              </div>
+            </div>
+            <div class="descripcion-card col-lg-4">
+              <div class="float-lg-right p-r-3">
+                <div class="font-weight-bold">28 nov 17</div>
+                <div>Traumatología</div>
+                <div>Localizador AB593TJ</div>
+                <div>ID Sanitas 0823252</div>
+                <div>Consulta #6512</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card p-t-3">
+          <div class="card-block">
+            <div class="imagen-card col-lg-1">
+
+            </div>
+            <div class="contenido-card col-lg-7">
+              <div class="hora-consulta col-lg-2">
+                <h2 class="card-subtitle mb-2">16:10</h2>
+              </div>
+              <div class="tipo-de-consulta col-lg-8 p-l-0">
+                <h2 class="card-subtitle mb-2">Primera consulta</h2>
+              </div>
+              <!--ESTA ES LA SECCION DE LA FOTO DEL CARD-->
+              <div class="circulo-foto-consulta">
+                <a class="icono-online-notificaciones">
+                  <img src="../../assets/img/online@3x.png" width="12" height="12" class="img-fluid">
+                </a>
+              </div>
+              <div class=" offset-lg-2 col-lg-8 p-l-0">
+                <h6 class="nombre-cliente-consulta mb-2">María Jimenez Ruiz</h6>
+                <h5 class="descripcion-cliente-consulta text-uppercase">MUJER / 28 AÑOS / CIUDAD REAL</h5>
+              </div>
+              <!--ESTA ES LA SECCION DE LOS TEST DE LA FOTO Y LAS CARACTERISTICAS DEL CARD-->
+              <div class="iconos-consulta">
+                <!--AQUI VA EL TEST DE LA IMAGEN-->
+                <div class="test-consulta col-lg-2">
+                  <p class="m-lg-0">12 min</p>
+                  <p>test ok</p>
+                </div>
+                <div class="col-lg-11 offset-lg-2 p-l-0">
+                  <a><img src="../../assets/img/icono-video.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-phone.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-chat.png" width="24" height="24" class="img-fluid"></a>
+                  <a class="icono-notificaciones"><img src="../../assets/img/group-4@3x.png" width="12" height="12" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-reporte.png" width="24" height="24" class="img-fluid"></a>
+                </div>
+              </div>
+            </div>
+            <div class="descripcion-card col-lg-4">
+              <div class="float-lg-right p-r-3">
+                <div class="font-weight-bold">28 nov 17</div>
+                <div>Traumatología</div>
+                <div>Localizador AB593TJ</div>
+                <div>ID Sanitas 0823252</div>
+                <div>Consulta #6512</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card p-t-3">
+          <div class="card-block">
+            <div class="imagen-card col-lg-1">
+
+            </div>
+            <div class="contenido-card col-lg-7">
+              <div class="hora-consulta col-lg-2">
+                <h2 class="card-subtitle mb-2">16:10</h2>
+              </div>
+              <div class="tipo-de-consulta col-lg-8 p-l-0">
+                <h2 class="card-subtitle mb-2">Primera consulta</h2>
+              </div>
+              <!--ESTA ES LA SECCION DE LA FOTO DEL CARD-->
+              <div class="circulo-foto-consulta">
+                <a class="icono-online-notificaciones">
+                  <img src="../../assets/img/online@3x.png" width="12" height="12" class="img-fluid">
+                </a>
+              </div>
+              <div class=" offset-lg-2 col-lg-8 p-l-0">
+                <h6 class="nombre-cliente-consulta mb-2">María Jimenez Ruiz</h6>
+                <h5 class="descripcion-cliente-consulta text-uppercase">MUJER / 28 AÑOS / CIUDAD REAL</h5>
+              </div>
+              <!--ESTA ES LA SECCION DE LOS TEST DE LA FOTO Y LAS CARACTERISTICAS DEL CARD-->
+              <div class="iconos-consulta">
+                <!--AQUI VA EL TEST DE LA IMAGEN-->
+                <div class="test-consulta col-lg-2">
+                  <p class="m-lg-0">12 min</p>
+                  <p>test ok</p>
+                </div>
+                <div class="col-lg-11 offset-lg-2 p-l-0">
+                  <a><img src="../../assets/img/icono-video.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-phone.png" width="24" height="24" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-chat.png" width="24" height="24" class="img-fluid"></a>
+                  <a class="icono-notificaciones"><img src="../../assets/img/group-4@3x.png" width="12" height="12" class="img-fluid"></a>
+                  <a><img src="../../assets/img/icono-reporte.png" width="24" height="24" class="img-fluid"></a>
+                </div>
+              </div>
+            </div>
+            <div class="descripcion-card col-lg-4">
+              <div class="float-lg-right p-r-3">
+                <div class="font-weight-bold">28 nov 17</div>
+                <div>Traumatología</div>
+                <div>Localizador AB593TJ</div>
+                <div>ID Sanitas 0823252</div>
+                <div>Consulta #6512</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!----------------------------------------------- este es el menu de busqueda --------------------------------------->
+
+<!-- MENU DERECHA AGENDA -->
+    <!--<div class="menu-busqueda col-md-3 col-lg-2">
+      <img class="img-fluid" src="../../assets/img/calendario.png" width="528px" height="612px">
+    <div class="panel-tarjeta-agenda">
+      <div class="row text-black">
+        <span>09:10 AM</span>
+        <span class="linea-divisoria-agenda"></span>
+      </div>
+      <div class="row tarjeta-agenda text-black">
+        <div class="col-md-10 p-0">nombre</div>
+        <div class="col-md-2 p-0">IC</div>
+      </div>
+      <div class="row text-black">
+        <span>09:10 AM</span>
+        <span class="linea-divisoria-agenda"></span>
+      </div>
+      <div class="">
+        <div class="input-group cyan boton-busqueda">
+          <a class="text-justify">buscar<img src="../../assets/img/magnifying-glass.png"></a>
+        </div>
+      </div>
+      <div class="text-black fecha-busqueda">11/10/2018</div>
+    </div>
+    </div>-->
+  </div>
+</div>
