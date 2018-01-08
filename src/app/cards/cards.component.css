@@ -31,3 +31,11 @@
 span{
   font-size: 11px;
 }
+.color-card{
+  background-color: #e5f1f9;
+  height: 100%;
+  width: 100%;
+}
+.color-card img{
+  margin-top: 10px;
+}
