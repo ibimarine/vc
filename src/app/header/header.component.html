@@ -6,7 +6,7 @@
         <div class="navbar-header">
           <a class="navbar-brand">
             <div class="col-md-2 col-lg-2">
-              <img routerLink="/" src="../assets/img/logo-sanitas-responsive.png" alt="Sanitas">
+              <img routerLink="/" src="../../assets/img/logo-sanitas-responsive.png" alt="Sanitas">
             </div>
           </a>
         </div>
@@ -29,10 +29,10 @@
 
         </div><!--/.nav-collapse -->
       </div><!--/.container-fluid -->
-      <div class="col-md-6 col-lg-8">
+      <div class="col-md-6 col-xl-8">
         <h5>Portal videoconsulta</h5>
       </div><!--/.container-fluid -->
-      <div class="navegador col-md-3 col-lg-2 p-md-0 p-lg-0">
+      <div class="navegador col-md-3 col-xl-2 p-md-0 p-xl-0">
         <div class="col-md-3 col-lg-3 float-left">
           <a [class.active]="aba == 'busqueda'" (click)="aba = 'busqueda'"><img src="../../assets/img/icono-lupa-blanco.png" width="24" height="24"></a>
         </div>
@@ -54,12 +54,16 @@
 <!--menu de chat-->
         <div *ngSwitchCase="'chat'">chat</div>
 <!--menu de agenda-->
-        <div *ngSwitchDefault class="menu-busqueda col-md-3 col-lg-2">
+        <div *ngSwitchDefault class="menu-busqueda col-md-3 col-xl-2">
           <img class="img-fluid" src="../../assets/img/calendario.png" width="528px" height="612px">
           <app-cards></app-cards>
         </div>
 <!--menu de notificaciones-->
-        <div *ngSwitchCase="'notificaciones'">notificaciones</div>
+        <div *ngSwitchCase="'notificaciones'">
+          <div class="menu-busqueda col-md-3 col-xl-2">
+            <app-notifications></app-notifications>
+          </div>
+        </div>
       </div>
     </nav>
   </div>
