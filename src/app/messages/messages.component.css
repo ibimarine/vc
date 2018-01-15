@@ -1,0 +1,43 @@
+.linea-divisoria-agenda{
+  background-color: black;
+  height: 1px;
+  flex: auto;
+  opacity: 0.25;
+  margin: auto;
+  margin-left: 5px;
+}
+.panel-tarjeta-agenda{
+  background-color: #f7f7f7;
+  height: 56px;
+}
+.tarjeta-agenda{
+  margin-top: 245px;
+}
+.nombre-menu-agenda{
+  color: #0079c8;
+  font-size: 12px;
+  text-align: left;
+  font-weight: 500;
+  line-height: 1.33;
+}
+.tipo-de-cita-menu-agenda{
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1.6;
+  text-align: left;
+  color: #6c6e71;
+
+}
+span{
+  font-size: 11px;
+}
+.color-card{
+  background-color: #e5f1f9;
+  height: 100%;
+  width: 100%;
+}
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+

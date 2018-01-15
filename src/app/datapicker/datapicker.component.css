@@ -1,0 +1,31 @@
+.sidenavContainer {
+  height: 100%;
+}
+
+/deep/ .mat-sidenav-transition .mat-sidenav-backdrop.mat-sidenav-shown {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.close-icon {
+  cursor: pointer;
+  margin-top: 9px;
+}
+
+.top-nav {
+  height: 64px;
+  position: fixed;
+  top: 0px;
+}
+
+.router-container {
+  width: 100%;
+  overflow: auto;
+  position: absolute;
+  bottom: 0;
+  top: 64px;
+}
+
+.nav-icon {
+  padding: 0 15px;
+  cursor: pointer;
+}

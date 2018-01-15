@@ -270,4 +270,7 @@ overflow: auto;
   margin: 0;
   margin-top: 7px;
 }
+.form-inline .form-control{
+  height: 35px;
+}
 

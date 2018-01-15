@@ -11,3 +11,20 @@
 .menu-agenda{
   color: black;
 }
+.menu-busqueda h6{
+  font-size: 11px;
+}
+.linea-lateral-busqueda{
+background-color: black;
+  height: 1px;
+  margin-top: 5px;
+  opacity: .25;
+}
+.hora-tarjetas-busqueda{
+  text-align: center;
+}
+.busqueda-form{
+  width: 100%;
+  border-radius: 8px;
+  border: solid 2px #e6e6e6;
+}

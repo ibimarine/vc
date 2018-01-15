@@ -50,17 +50,85 @@
 
       <div class="container" [ngSwitch]="aba">
 <!--menu de busqueda-->
-        <div *ngSwitchCase="'busqueda'">busqueda</div>
+        <div *ngSwitchCase="'busqueda'">
+          <div class="menu-busqueda col-md-3 col-xl-2">
+            <div class="menu-busqueda col-md-3 col-xl-2">
+              <div class="notificaciones row m-t-2 text-black">
+                <div class="col-lg-10 float-left">
+                  <h5>Búsqueda</h5>
+                </div>
+                <div class="col-lg-2 float-right">
+                  <img class="float-right" src="../../assets/img/close-lite.png" width="24" height="24">
+                </div>
+              </div>
+              <div class="row text-black">
+                <form class="form-inline busqueda-form m-3">
+                  <input class="form-control col-lg-12" type="text" placeholder="Paciente,#localizador...">
+                </form>
+              </div>
+<!--------------------------------HORA Y LINEA DE LAS TARJETAS DE BUSQUEDA--------------------------------------------------->
+              <div class="row hora-tarjetas-busqueda">
+                <div class="col-lg-12 text-black">
+                  <div class="col-lg-4 float-left linea-lateral-busqueda"></div>
+                  <div class="col-lg-4 p-0 float-left">
+                    <h6>11/01/2018</h6>
+                  </div>
+                  <div class="col-lg-4 float-left linea-lateral-busqueda"></div>
+                </div>
+              </div>
+              <app-cards></app-cards>
+            </div>
+          </div>
+        </div>
 <!--menu de chat-->
-        <div *ngSwitchCase="'chat'">chat</div>
+        <div *ngSwitchCase="'chat'">
+          <div class="menu-busqueda col-md-3 col-xl-2">
+            <div class="menu-busqueda col-md-3 col-xl-2">
+              <div class="notificaciones row m-t-2 text-black">
+                <div class="col-lg-10 float-left">
+                  <h5>Mensajes</h5>
+                </div>
+                <div class="col-lg-2 float-right">
+                  <img class="float-right" src="../../assets/img/close-lite.png" width="24" height="24">
+                </div>
+              </div>
+                <div class="row text-black">
+                  <form class="form-inline busqueda-form m-3">
+                    <input class="form-control col-lg-12" type="text" placeholder="Nombre de paciente">
+                  </form>
+                </div>
+              <app-messages></app-messages>
+            </div>
+          </div>
+        </div>
 <!--menu de agenda-->
-        <div *ngSwitchDefault class="menu-busqueda col-md-3 col-xl-2">
-          <img class="img-fluid" src="../../assets/img/calendario.png" width="528px" height="612px">
-          <app-cards></app-cards>
+        <div *ngSwitchDefault>
+          <div class="menu-busqueda col-md-3 col-xl-2">
+            <div class="menu-busqueda col-md-3 col-xl-2">
+              <div class="notificaciones row m-t-2 text-black">
+                <div class="col-lg-10 float-left">
+                  <h5>Agenda</h5>
+                </div>
+                <div class="col-lg-2 float-right">
+                  <img class="float-right" src="../../assets/img/close-lite.png" width="24" height="24">
+                </div>
+              </div>
+              <img class="img-fluid" src="../../assets/img/calendario.png" width="528px" height="612px">
+              <app-cards></app-cards>
+            </div>
+          </div>
         </div>
 <!--menu de notificaciones-->
         <div *ngSwitchCase="'notificaciones'">
           <div class="menu-busqueda col-md-3 col-xl-2">
+            <div class="notificaciones row m-t-2 text-black">
+              <div class="col-lg-10 float-left">
+                <h5>Notificaciones</h5>
+              </div>
+              <div class="col-lg-2 float-right">
+                <img class="float-right" src="../../assets/img/close-lite.png" width="24" height="24">
+              </div>
+            </div>
             <app-notifications></app-notifications>
           </div>
         </div>

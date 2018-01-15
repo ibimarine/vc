@@ -10,6 +10,7 @@ import { DatapickerComponent } from './datapicker/datapicker.component';
 import { HeaderComponent } from './header/header.component';
 import { CardsComponent } from './cards/cards.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { MessagesComponent } from './messages/messages.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,7 @@ const routes: Routes = [
     HeaderComponent,
     CardsComponent,
     NotificationsComponent,
+    MessagesComponent,
   ],
   imports: [
     BrowserModule,
