@@ -37,7 +37,20 @@ span{
   width: 100%;
 }
 .example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  margin-left: 5px;
+  background-image: url("../../assets/img/doctora.png");
   background-size: cover;
 }
-
+.mat-card{
+  padding: 0;
+  box-shadow: none !important;
+}
+.mat-card-header-text{
+  margin: 0;
+}
+.mat-card-actions, .mat-card-content, .mat-card-subtitle, .mat-card-title{
+  margin-bottom: 5px;
+}
+.mensaje-paciente{
+  box-shadow: 0 1px 0 0 rgba(0,0,0,.14);
+}

@@ -7,10 +7,15 @@ import {NgModule} from '@angular/core';
 })
 
 export class HomeComponent implements OnInit {
-
+  mostrar: Boolean;
   constructor() {
   }
 
   ngOnInit() {
+  }
+
+  ocultar(): void {
+
+    this.mostrar = true;
   }
 }

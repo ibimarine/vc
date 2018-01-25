@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
 <!------------------------------------------------menu del doctor izquierda------------------------------------------>
-    <div class="menu-doctor col-md-3 col-lg-2 p-0">
+    <div ng-if="ocultar()" class="menu-doctor col-md-3 col-lg-2 p-0">
 <!--foto, estado y cierre del doctor-->
       <div class="row p-t-4">
         <div class="circulo-foto-doctora">
@@ -10,7 +10,7 @@
           </a>
         </div>
         <div class="icono-cierre-doctora">
-          <a class="">
+          <a (click)="mostrar" class="">
             <img src="../../assets/img/close-lite.png" width="24" height="24" class="img-fluid">
           </a>
         </div>
@@ -123,7 +123,6 @@
 <!--Settings menu izquierda-->
       <div class="row settings-estilo">
         <div  class="col-lg-12">
-          <img class="m-r-2 img-fluid" src="../../assets/img/settings-icon.png" width="13px" height="13px">
           <li><a routerLink="/about">Ajustes</a></li>
 
         </div>
